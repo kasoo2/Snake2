@@ -11,11 +11,17 @@ namespace Snake2
         static void Main(string[] args)
         {
 
-            HorizontallLine line = new HorizontallLine(5, 10, 8, '+');
-            line.DrawPH();
+            HorizontallLine lineL = new HorizontallLine(5, 10, 5, '+');
+            lineL.Drow();
 
-            VerticallLine line2 = new VerticallLine(5, 20, 5, '+');
-            line2.DrawPV();
+            HorizontallLine lineR = new HorizontallLine(5, 10, 20, '+');
+            lineR.Drow();
+
+            VerticallLine lineUp = new VerticallLine(5, 20, 5, '+');
+            lineUp.Drow();
+
+            VerticallLine lineDown = new VerticallLine(5, 20, 10, '+');
+            lineDown.Drow();
 
             Console.ReadLine();
         }
